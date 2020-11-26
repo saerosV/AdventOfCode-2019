@@ -40,7 +40,7 @@
 ;; The required fuel to launch a given module, based on its mass
 
 (define (fuel-required mass)
-  (- (floor (/ mass 3)) 2))  ; Floor matches the expected values, instead of round 
+  (- (floor (/ mass 3)) 2))  ; Floor matches the expected values, round didn't 
 
 (check-equal? (fuel-required 12) 2)
 (check-equal? (fuel-required 14) 2)
